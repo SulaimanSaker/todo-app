@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "3865fd6d-4330-46f9-9f82-095dcf8aa176",
+		"name": "todo-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/todo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"todo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new todo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Todo text\",\n\t\"user\": \"507f1f77bcf86cd799439011\",\n\t\"completed\": false\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/sqlTodo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sqlTodo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/todo/60dd52fbca003f3a9819a312",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"todo",
+						"60dd52fbca003f3a9819a312"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an existing todo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Todo text\",\n\t\"user\": \"507f1f77bcf86cd799439011\",\n\t\"completed\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/todo/60dd53a8ca003f3a9819a315",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"todo",
+						"60dd53a8ca003f3a9819a315"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todo information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/todo/507f1f77bcf86cd799439011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"todo",
+						"507f1f77bcf86cd799439011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get todos MySql",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/sqlTodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sqlTodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new todo MySql",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Todo text\",\n\t\"user\": \"507f1f77bcf86cd799439011\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/todo/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"todo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete todo MySql",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/sqlTodo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sqlTodo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an existing todo MySql",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\": \"Todo text\",\n\t\"user\": \"507f1f77bcf86cd799439011\",\n\t\"completed\": true\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/sqlTodo/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"sqlTodo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
