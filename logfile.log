@@ -1,4 +1,0 @@
-{"level":"info","message":"Listening on port 5000...","timestamp":"2021-07-01T04:20:07.135Z"}
-{"level":"info","message":"Connected to mongodb://localhost/dbname...","timestamp":"2021-07-01T04:20:07.159Z"}
-{"level":"info","message":"Listening on port 5000...","timestamp":"2021-07-01T04:50:23.678Z"}
-{"level":"info","message":"Connected to mongodb://localhost/todoapp...","timestamp":"2021-07-01T04:50:23.694Z"}
