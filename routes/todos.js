@@ -7,6 +7,12 @@ router.get('/', async (req, res) => {
   res.send(todos);
 });
 
+router.get('/:userId', async (req, res) => {
+  const todos = await Todo.find({ user: req.params.userId });
+
+  res.send(todos);
+});
+
 router.post('/', async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
