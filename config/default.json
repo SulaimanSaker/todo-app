@@ -2,5 +2,9 @@
   "jwtPrivateKey": "unsecureKey",
   "db": "mongodb://localhost/todoapp",
   "port": "5000",
-  "requiresAuth": true
+  "requiresAuth": true,
+  "mysql_host": "localhost",
+  "mysql_user": "root",
+  "mysql_database": "database",
+  "mysql_password": "saaam-sy-1992"
 }
