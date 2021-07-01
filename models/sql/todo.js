@@ -13,6 +13,14 @@ module.exports = class Todo {
     ]);
   }
 
+  update(id) {
+    return db.execute("UPDATE todos SET text = ?, completed= ? WHERE id = ?;", [
+      this.text,
+      this.completed,
+      id,
+    ]);
+  }
+
   static deleteById(id) {
     return db.execute("DELETE FROM todos WHERE todos.id = ?;", [id]);
   }
