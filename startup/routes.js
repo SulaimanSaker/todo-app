@@ -2,7 +2,7 @@ const express = require('express');
 const user = require('../routes/users');
 const image = require('../routes/images');
 const auth = require('../routes/auth');
-const todo = require('../routes/users');
+const todo = require('../routes/todos');
 const error = require('../middleware/error');
 
 module.exports = function (app) {
